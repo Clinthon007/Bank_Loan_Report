@@ -72,22 +72,25 @@ WHERE
     MONTH (issue_date) = 11
 	AND YEAR (issue_date) = 2021;
 ```
-Image for All Loan Applications
+Image for All Loan Applications, gotten from Tableau.
 
-[Loan Applications](C:\Users\Admin\Pictures\Total_loan_apps.png)
+![Total_loan_apps](https://github.com/user-attachments/assets/b6d0cdc5-6d71-4339-aa7d-389be47222fc)
 
 ---
+
 2. **Total Funded Amount** with respect to *Month-to-Date (MTD)* and *Previous Month-to-Date (PMDT)*
 - Total Funded Amount
 ```SQL
 SELECT SUM(loan_amount) loan_amount
-FROM Bank_Loan_Data;
+FROM
+    Bank_Loan_Data;
 ```
 - Month-to-Date (MTD)
 ```SQL
 SELECT
     SUM (loan_amount) AS MTD_Total_Funded_Amount
-FROM Bank_Loan_Data
+FROM
+    Bank_Loan_Data
 WHERE
     MONTH (issue_date) = 12
  AND YEAR (issue_date) = 2021;
@@ -96,8 +99,114 @@ WHERE
 ```SQL
 SELECT
       SUM (loan_amount) AS PMTD_Total_Funded_Amount
-FROM Bank_Loan_Data
+FROM
+    Bank_Loan_Data
 WHERE
     MONTH (issue_date) = 11
 AND YEAR (issue_date) = 2021;
 ```
+Image for All Funded Loans
+
+![Total_Funded Amount](https://github.com/user-attachments/assets/8c79dd20-1452-41dd-87ae-05169261e398)
+
+---
+3.  **Total Amount Received** with respect to *Month-to-Date (MTD)* and *Previous Month-to-Date (PMDT)*
+- Total Amount Received
+```SQL
+SELECT
+     SUM (total_payment) AS Total_Amount_Received
+FROM
+   Bank_Loan_Data;
+```
+- Month-to-Date (MTD)
+```SQL
+SELECT
+     SUM (total_payment) AS MTD_Total_Amount_Received
+FROM
+    Bank_Loan_Data
+WHERE
+    MONTH (issue_date) = 12
+AND YEAR (issue_date) = 2021;
+```
+- Previous Month-to-Date PMTD)
+```SQL
+SELECT
+     SUM (total_payment) AS PMTD_Total_Amount_Received
+FROM
+    Bank_Loan_Data
+WHERE
+    MONTH (issue_date) = 11
+AND YEAR (issue_date) = 2021;
+```
+Image For All Amount Received
+
+![Total_Amount_Received](https://github.com/user-attachments/assets/49022554-78b9-4fe4-92ff-bc5a48399202)
+
+---
+
+4. **Average Interest Rate** with respect to *Month-to-Date (MTD)* and *Previous Month-to-Date (PMDT)*
+- Total Avg Int Rate
+```SQL
+Average Interest Rat
+SELECT
+     ROUND (AVG (int_rate), 4) * 100 AS Avg_Interest_Rate
+FROM
+    Bank_Loan_Data;
+```
+- Month-to-Date (MTD)
+```SQL
+SELECT
+     ROUND (AVG (int_rate), 4) * 100 AS MTD_Avg_Interest_Rate
+FROM
+    Bank_Loan_Data
+WHERE
+    MONTH (issue_date) = 12
+  AND YEAR (issue_date) = 2021;
+``` 
+- Previous Month-to-Date (PMTD)
+```SQL
+SELECT
+     ROUND (AVG (int_rate), 4) * 100 AS PMTD_Avg_Interest_Rate
+FROM
+   Bank_Loan_Data
+WHERE
+    MONTH (issue_date) = 11
+  AND YEAR (issue_date) = 2021;
+```
+Image for All Average Int Rates
+
+![Avg_Int_Rate](https://github.com/user-attachments/assets/330e2bac-417e-434b-b509-7f8d6f8e8839)
+
+---
+
+5. **Average Debt-to-Income Ratio** with respect to *Month-to-Date (MTD)* and *Previous Month-to-Date (PMDT)*
+- Average DTI
+```SQL
+SELECT
+     ROUND (AVG (dti), 4) * 100 AS MTD_Avg_DTI
+FROM
+    Bank_Loan_Data;
+```
+- Month-to-Date (MTD)
+```SQL
+SELECT
+      ROUND (AVG (dti), 4) * 100 AS MTD_Avg_DTI
+FROM
+    Bank_Loan_Data
+WHERE
+      MONTH (issue_date) = 12
+  AND YEAR (issue_date) = 2021;
+```
+- Previous Month-to-Date (PMTD)
+```SQL
+SELECT
+     ROUND (AVG (dti), 4) * 100 AS PMTD_Avg_DTI
+FROM
+    Bank_Loan_Data
+WHERE
+      MONTH (issue_date) = 11
+  AND YEAR (issue_date) = 2021;
+```
+Image of All Avg DTIs
+
+![Avg_DTIs](https://github.com/user-attachments/assets/2d8101f5-aaa2-4e92-90e7-9d721b2cc4a8)
