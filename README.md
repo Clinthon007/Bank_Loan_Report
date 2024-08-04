@@ -25,23 +25,24 @@ EDA involved exploring the financial loan data to answer key questions, such as:
 
 A) KPIs
   1. What's the *Total Loan Applications* using the following:
-     - Month-to-Date loan applications (MTD)
+     - Current Month-to-Date loan applications (MTD)
      - Previous Month-to-Month (PMTD) to track changes.
   2. *Total Funded Amount* using:
-       - Month-to-Date total funded amount (MTD)
+       - Current Month-to-Date total funded amount (MTD)
        - Previous Month-to-Month (PMTD) to track metric changes
   3. *Total Amount Received* using:
-      - Month-to-Date (MTD) to know our total amount received
+      - Current Month-to-Date (MTD) to know our total amount received
       - Previous Month-to-Month (PMTD) to track metric changes
   4. *Average Interest Rate* Using:
-      - Month-to-Date(MTD) to know our average Interest Rate
+      - Current Month-to-Date(MTD) to know our average Interest Rate
        - Previous Month-to-Month (PMTD) to track metric changes
   5. *Average Debt_to-Income_Ratio*(DTI): Evaluating the average DTI for our borrowers helps us 
      gauge their financial health. 
-      - Month-to-Date (MTD) Average DTI
+      - Current Month-to-Date (MTD) Average DTI
        - Previous Month-to-Month (PMTD) to track metric changes
-
-B) What are the Good Loan Vs Bad Loan KPIs?
+- *Note: *Both Current and Previous Months calculations would help get the Month-over-Month (MoM) trends*
+ 
+B) What are the Good Loan Vs Bad Loan?
 
 C) What is the Loan Status Overall?
 
