@@ -47,7 +47,7 @@ C) What is the Loan Status Overall?
 
 ### Data Analysis
 As stated earlier, the analysis were done strictly using **MS SQL Server**. Below are the analysis:
-1. **Total Loan Applications** with respect to *Month-to-Date (MTD)* and *Month-over-Month (MoM)*
+1. **Total Loan Applications** with respect to *Month-to-Date (MTD)* and *Previous Month-to-Date (PMDT)*
 - Total Loan Applications
 ```SQL 
 SELECT
@@ -71,4 +71,33 @@ FROM Bank_Loan_Data
 WHERE
     MONTH (issue_date) = 11
 	AND YEAR (issue_date) = 2021;
-``` 
+```
+Image for All Loan Applications
+
+[Loan Applications](C:\Users\Admin\Pictures\Total_loan_apps.png)
+
+---
+2. **Total Funded Amount** with respect to *Month-to-Date (MTD)* and *Previous Month-to-Date (PMDT)*
+- Total Funded Amount
+```SQL
+SELECT SUM(loan_amount) loan_amount
+FROM Bank_Loan_Data;
+```
+- Month-to-Date (MTD)
+```SQL
+SELECT
+    SUM (loan_amount) AS MTD_Total_Funded_Amount
+FROM Bank_Loan_Data
+WHERE
+    MONTH (issue_date) = 12
+ AND YEAR (issue_date) = 2021;
+```
+- Previous Month-to-Date (PMTD)
+```SQL
+SELECT
+      SUM (loan_amount) AS PMTD_Total_Funded_Amount
+FROM Bank_Loan_Data
+WHERE
+    MONTH (issue_date) = 11
+AND YEAR (issue_date) = 2021;
+```
