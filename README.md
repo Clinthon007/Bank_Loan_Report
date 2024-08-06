@@ -358,7 +358,8 @@ Without additional context, it's challenging to pinpoint the exact reasons behin
 
 b) i. Loan Applications By States
 
-![Total_Loan_Apps by_state](https://github.com/user-attachments/assets/85961f5f-6a42-42e8-9e78-a76a65aded53)
+![Tot_Loan_Apps_By_State](https://github.com/user-attachments/assets/16ff3f7a-7525-438b-8edd-185744e56966)
+
 
 - The map visually depicts the number of loan applications across different states in the USA.
 - The numbers associated with each state represent the total loan applications within that state.
@@ -374,7 +375,8 @@ Key Insights:
 
 **ii. Total Funded Amount by States**
 
-![Total_Funded Amount_by_State](https://github.com/user-attachments/assets/24dda3c0-bbf2-4906-9282-b43bb613a81c)
+![Tot_Fnd_Amt_by_State](https://github.com/user-attachments/assets/e0fe1ee6-a788-4310-95c5-d5f7ed08677a)
+
 
 Key Observations
 
@@ -392,7 +394,8 @@ Regional Trends:
 
 **iii**. **Total Amount Received By States**
 
-![Total_Amount Received_by_State](https://github.com/user-attachments/assets/4e10d8d4-da38-40bf-b339-4b41df2550d0)
+![Tot_Amt_Rcvd_by_State](https://github.com/user-attachments/assets/7dfc8100-f99a-401f-afb1-393f51261d8d)
+
 
 **Wide Variation**: There is a significant disparity in the numerical values across states, suggesting substantial differences in the total amount received.
 
@@ -514,4 +517,38 @@ Key Findings:
 
 e) **i. Loan Applications by Home Ownership**
 
-![Loan_Apps_by_Home_Ownership](https://github.com/user-attachments/assets/52f489b0-f480-4d5a-9418-43d2a510ea2d)
+![Tot_Loan_Apps_by_Home_Owned](https://github.com/user-attachments/assets/e1d2652a-1e0e-4ef6-8c72-ff8a3ac4db97)
+
+Key Findings:
+
+**Renters Dominate**: The most significant number of loan applications comes from individuals who rent their homes, with a total of **18,439** applications.
+
+**Homeowners with Mortgages Follow**: The second-largest group of loan applicants consists of homeowners with mortgages, accounting for **17,198** applications.
+
+**Homeowners Without Mortgages (Own)**: This category represents a significantly smaller portion of loan applicants, with only **2,838** applications.
+
+
+
+
+**ii. Funded Amount By Home Ownership**
+
+![Tot_Fnd_Amt_by_Home_Owned](https://github.com/user-attachments/assets/0e1ab471-2907-4448-b9cc-ccc5197c33ff)
+
+**Mortgage Dominate**: The most significant number of loan funded by the bank to individuals using Mortgage, with a total of sum of $219,329,150.
+
+**Renters Follow**: The second-largest group of loan funded consists of homeowners with Rents, accounting for the sum of $185,768,475.
+
+**Homeowners Without Mortgages (Own)**: This category represents a significantly smaller portion of loan funded by the bank, with the sum of $29,597,675.
+
+
+**iii. Amount Received By Home Ownership**
+
+![Tot_Amt_Rcvd_by_Home_Owned](https://github.com/user-attachments/assets/b2b0c783-d2fa-4242-bc97-32bf73b15700)
+
+**Mortgage** again has the highest sum returned by individuals totally with the sum of $238,474,438
+
+**Renters** follow with the huge sum of $201,823,056
+
+**Own** comes up last as usual with the sum of $31,729,129
+
+Generally, it's seen that areas where more loan were put into or funded still had the highest number of return due to different circumstances like number of applicants. Therefore, their profit margin varies in accordance to amount funded with regards to applicants.
