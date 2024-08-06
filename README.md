@@ -46,6 +46,19 @@ B) What are the Good Loan Vs Bad Loan?
 
 C) What is the Loan Status Overall?
 
+The following would be considered along:
+
+   a) Loan By Monthly Trends
+
+   b) Loan By States
+
+   c) Loans By Employee Length
+   
+   d) Loan By Purpose
+
+   e) Loans by Home Ownership
+
+
 ### Data Analysis
 As stated earlier, the analysis were done strictly using **MS SQL Server**. Below are the analysis:
 1. **Total Loan Applications** with respect to *Month-to-Date (MTD)* and *Previous Month-to-Date (PMDT)*
@@ -268,7 +281,8 @@ With the above, it's seen that the total percentage of loans that were given out
 
 ---
 - ### Bad Loans Issued (Bad Debt)
- This a loan or debt given to borrowers whom at the end of a specified period could not meet up with repayment of the debt, either because they cannot afford to repay or they may have died or something else. These borrowers tend to incur more debt over such period in this scenerio since such debt does not favour/profit him. All Bad Debts are generally calculated using the "Charged Off" column/field.
+ This a loan or debt given to borrowers whom at the end of a specified period could not meet up with repayment of the debt, either because they cannot afford to repay or they may have died or something else. These borrowers tend to incur more debt over such period in this scenerio since such debt does not favour/profit them. All Bad Debts are generally calculated using the "Charged Off" column/field.
+ 
 i. Bad Loan Percentage
 ```SQL
 SELECT 
@@ -314,3 +328,190 @@ WHERE
 ![Bad_Loan_Issued](https://github.com/user-attachments/assets/89c04637-5574-43b3-994b-34286205eb4e)
 
 With the above, it's seen that the total percentage of loans that were given out by the bank to borrowers has low return/refund rate of '**13%**'. Meaning, many borrowers failed to meet up with their payment and on time (Charged Off). Also, fewer borrowers applied for Bad loans as applied to that of the Good Loans which was on a positive note or a good thing for the bank, but this was on a negative/bad note of which the bank made no profit from, and having amounted to '**5.3k**' applicants.  Also, Bad loans funded by the bank to borrowers was on a low note of '**$65.5M**' due to number of applications as compared to the previous. Again, Amount repaid by borrowers were on a negative note as well, and amounting to '**$37.3M**' returned. Seeing all these, the bank were at a loss with the sum of '**$-28.2M**' within that period.
+
+---
+
+a) Loan Applications By Monthly Trends
+
+![Total_Loan_Apps By_Month](https://github.com/user-attachments/assets/121e5a19-d597-4160-89ef-948bd16861e5)
+
+
+The graph illustrates a clear upward trend in loan applications throughout the year. The number of applications starts relatively low in January and steadily increases, culminating in a peak in December.
+
+Specific Observations:
+
+**January to April**: The initial months show a gradual increase in loan applications, with a slight dip in February.
+
+**April to July**: A more pronounced upward trajectory is evident, indicating a growing demand for loans during this period.
+
+**July to December**: The trend continues its upward momentum, with a particularly sharp rise from October to December, suggesting a potential surge in loan applications towards the end of the year.
+
+Without additional context, it's challenging to pinpoint the exact reasons behind these trends. However, some potential factors could include:
+
+   - *Seasonality*: Certain months might naturally witness higher loan application volumes due to seasonal factors like tax refunds, year-end bonuses, or holiday spending.
+
+   - _Economic Conditions_: Fluctuations in economic indicators like GDP growth, interest rates, or employment rates could influence borrowing decisions.
+
+   - _Marketing and Promotions_: Targeted marketing campaigns or special loan offers during specific months might drive application numbers.
+
+   ---
+
+b) i. Loan Applications By States
+
+![Total_Loan_Apps by_state](https://github.com/user-attachments/assets/85961f5f-6a42-42e8-9e78-a76a65aded53)
+
+- The map visually depicts the number of loan applications across different states in the USA.
+- The numbers associated with each state represent the total loan applications within that state.
+- There's a clear variation in loan application numbers across states, indicating disparities in demand or accessibility to loans.
+
+Key Insights:
+
+**California Dominates**:** California** stands out with the highest number of loan applications (6,894), significantly surpassing other states. This could be attributed to its large population, diverse economy, and high cost of living, potentially driving a higher demand for loans.
+
+**Regional Disparities**: The Northeast and West Coast states generally exhibit higher loan application numbers compared to the Midwest and South. This could be influenced by factors such as population density, economic activity, and cost of living.
+
+**States with Lower Applications**: Several states, particularly in the Midwest and South, have relatively lower loan application figures. This could be due to various reasons, including smaller populations, lower income levels, or different economic structures.
+
+**ii. Total Funded Amount by States**
+
+![Total_Funded Amount_by_State](https://github.com/user-attachments/assets/24dda3c0-bbf2-4906-9282-b43bb613a81c)
+
+Key Observations
+
+**Wide Variation**: There's a significant disparity in the numerical values across states, suggesting substantial differences in the total funded amount.
+
+Regional Trends:
+
+**West Coast**: **California**(78,484,125) stands out with the highest value, indicating a potentially larger pool of funds in that region.
+
+**Northeast**: States like **New York**(42,077,050) and **Pennsylvania**(15,826,525) exhibit relatively high values, suggesting significant funding in this area.
+
+**Midwest and South**: These regions generally show lower values, implying potentially lower levels of funding compared to the coasts.
+
+**Potential Outliers**: Some states with exceptionally low values (e.g., Wyoming, Vermont) might warrant further investigation to understand the reasons behind the discrepancy.
+
+**iii**. **Total Amount Received By States**
+
+![Total_Amount Received_by_State](https://github.com/user-attachments/assets/4e10d8d4-da38-40bf-b339-4b41df2550d0)
+
+**Wide Variation**: There is a significant disparity in the numerical values across states, suggesting substantial differences in the total amount received.
+
+**Dominant States**: **California**(83,901,234) stands out with the highest value, followed by **New York**(46,108,181), and **Texas**(34,392,715). These states consistently appear as economic powerhouses in various contexts.
+
+**Regional Trends**: The Northeast and West Coast states generally have higher values, while the Midwest and South tend to have lower figures.
+
+**Potential Outliers**: Some states with exceptionally low values might require further investigation to understand the reasons behind the discrepancy.
+
+---
+
+c) **i. Loan Applications By Employee Length**
+
+![Loan_Apps_by_Emp_length](https://github.com/user-attachments/assets/a319edca-c033-4d71-a526-5d048f98c7c8)
+
+Key Findings:
+
+- **Inverse Relationship**: There seems to be an inverse relationship between employee length and the number of loan applications. Employees with longer tenures tend to apply for loans less frequently than those with shorter tenures.
+ 
+- **High Application Rate for New Employees:** The category of employees with less than one year of employment has the second-highest number of loan applications, suggesting a potential correlation between new hires and financial needs.
+ 
+- **Decreasing Trend**: As employee tenure increases, the number of loan applications generally decreases, with a steeper decline in the earlier years of employment.
+Dominant Group: Employees with over 10 years of tenure constitute the largest group of loan applicants.
+
+
+**ii. Total Funded Amount**
+
+![Funded_Amount_by_Emp_Length](https://github.com/user-attachments/assets/8c770bf9-cb10-4216-bb21-09f5e76e455e)
+
+Key Findings:
+
+**Dominant Group**: Employees with over 10 years of tenure have the highest total funded amount, significantly surpassing other groups. This suggests that longer-tenured employees have access to or are granted larger funding compared to their counterparts.
+
+**Decreasing Trend**: As employee tenure decreases, the total funded amount generally decreases. This indicates a potential correlation between employee experience and the size of funding received.
+
+**Notable Exceptions**: There are some exceptions to the general trend. For instance, employees with 2 years of experience have a higher total funded amount than those with 3 or 4 years of experience. This might indicate specific factors influencing funding decisions for employees in this tenure range.
+
+
+**iii. Total Amount Received**
+
+![Amount_Received_by_Emp_Length](https://github.com/user-attachments/assets/338d9e3f-2c65-4cd6-9bb0-bad3ca2002b8)
+
+Key Findings:
+
+**Dominant Group**: Employees with over 10 years of tenure have the highest total amount received, significantly surpassing other groups. This suggests that longer-tenured employees have access to or are granted larger amounts compared to their counterparts.
+
+**Decreasing Trend**: As employee tenure decreases, the total amount received generally decreases. This indicates a potential correlation between employee experience and the size of the amount received.
+
+**Notable Exceptions**: There are some exceptions to the general trend. For instance, employees with 2 years of experience have a higher total amount received than those with 3 or 4 years of experience. This might indicate specific factors influencing the amount received for employees in this tenure range.
+
+Possible Interpretations:
+
+**Experience and Trust**: Longer-tenured employees might have established trust and a proven track record, leading to higher levels of funds allocated to them.
+
+**Career Progression**: Employees with more experience often hold higher positions or have greater responsibilities, which could correlate with larger amounts received.
+
+**Project Scope**: The nature of projects undertaken by employees with different tenure lengths might vary in terms of scale and complexity, influencing the required amount.
+
+**Funding Criteria**: There could be specific criteria or policies in place that favor employees with longer tenure when it comes to funding decisions.
+
+---
+
+d) **i. Loan Applications By Purpose**
+
+![Loan_Apps_by_Purpose](https://github.com/user-attachments/assets/b7cb041d-0d2d-4a78-8031-9d4d634f6dd9)
+
+Key Observations:
+
+  - **Debt Consolidation Dominates**: Debt consolidation is the most common loan purpose, accounting for $18.21K in applications. This suggests that many people are seeking loans to manage existing debts.
+
+  - **Credit Card Debt**: Credit card debt is the second most popular reason for seeking loans, with $5.00K in applications. This aligns with the high prevalence of credit card usage and potential difficulties 
+      in managing repayments.
+  - **Home Improvement and Other Purposes**: Home improvement and "other" purposes each account for a significant portion of loan applications, with $2.88K and $2.88K, respectively. This indicates a range of 
+     needs beyond debt consolidation and credit card debt.
+
+  - **Major Purchases and Small Business**: Major purchases and small business loans each represent a sizable portion of applications, with $1.78K each. This suggests a demand for financing for both personal and 
+      entrepreneurial endeavors.
+
+  - **Car Loans and Other Purposes**: Car loans, weddings, medical expenses, moving, and home purchases together account for a smaller but still significant portion of loan applications, with a combined total of 
+     $2.21K. This highlights the diverse reasons why people seek loans.
+
+  - **Educational and Renewable Energy Loans**: These categories have the lowest number of applications, with $0.09K each, indicating a limited demand for loans in these areas.
+      Overall, the data reveals that debt consolidation and credit card debt are the primary drivers of loan applications, followed by home improvement, major purchases, and small business needs.
+      While other categories exist, they represent a smaller portion of the total loan applications.
+
+
+**ii. Loan Funded Amount by Purpose**
+
+![Funded_Amount_by_Purpose](https://github.com/user-attachments/assets/60432b07-a50e-4d84-ae7f-365c1644dbda)
+
+Key Findings:
+
+  - **Debt Consolidation Dominates**: Debt consolidation represents the largest portion of the total funded amount, totaling $232,459.68K. This indicates a significant demand for loans to consolidate existing debts.
+
+  - **Credit Card Debt**: Following closely behind, credit card debt accounts for $58,885.18K in funded amounts. This highlights the substantial financial burden carried by individuals due to credit card debt.
+   
+  - **Home Improvement and Other**: These categories show significant funding with $31,155.75K each, indicating a substantial investment in home improvement projects and other unspecified purposes.
+
+  - **Small Business and Major Purchases**: Small business and major purchases have received considerable funding, totaling $17,251.60K and $9,225.80K respectively. This suggests a strong focus on supporting entrepreneurial ventures and consumer spending.
+  
+  - **Remaining Categories**: The remaining categories (car, wedding, medical, house, moving, educational, vacation, renewable energy) collectively represent a smaller portion of the total funded amount
+
+
+**iii. Loan Amount Received by Purpose**
+
+![Amount_Received_by_Purpose](https://github.com/user-attachments/assets/93afeaf9-d0e1-4007-9b10-4a50656619fd)
+
+**Debt Consolidation Dominates**: The most significant amount received is for debt consolidation, totaling $253,801.87K. This indicates a substantial demand for loans to consolidate existing debts.
+
+**Credit Card Debt**: Following closely behind, credit card debt accounts for $65,214.08K in received funds. This highlights the considerable financial burden carried by individuals due to credit card debt.
+
+**Home Improvement and Other**: These categories show substantial amounts received with $33,289.68K each, indicating significant investment in home improvement projects and other unspecified purposes.
+
+**Small Business and Major Purchases**: Small business and major purchases have received considerable funding, totaling $18,676.93K and $10,266.86K respectively. This suggests a strong focus on supporting entrepreneurial ventures and consumer spending.
+
+**Remaining Categories**: The remaining categories (car, wedding, medical, house, moving, educational, vacation, renewable energy) collectively represent a smaller portion of the total amount received.
+
+---
+
+e) **i. Loan Applications by Home Ownership**
+
+![Loan_Apps_by_Home_Ownership](https://github.com/user-attachments/assets/52f489b0-f480-4d5a-9418-43d2a510ea2d)
