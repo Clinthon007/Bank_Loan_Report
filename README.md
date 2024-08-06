@@ -4,6 +4,9 @@
 A Report to monitor and assess our bank's lending activities and performance which aims to provide insights into key loan-related metrics and their changes over time.
 
 ### Data Source
+
+[ Data_Link ](https://drive.google.com/drive/folders/1nVYJrAVvUegJjX9vChxWCW61TzBQ49td)
+
 Financial Loan: The primary dataset used for this analysis is the "financial_loan.csv" file, containing detailed information about each loan made by the bank.
 
 ### Tools Used
@@ -529,7 +532,6 @@ Key Findings:
 
 
 
-
 **ii. Funded Amount By Home Ownership**
 
 ![Tot_Fnd_Amt_by_Home_Owned](https://github.com/user-attachments/assets/0e1ab471-2907-4448-b9cc-ccc5197c33ff)
@@ -552,3 +554,6 @@ Key Findings:
 **Own** comes up last as usual with the sum of $31,729,129
 
 Generally, it's seen that areas where more loan were put into or funded still had the highest number of return due to different circumstances like number of applicants. Therefore, their profit margin varies in accordance to amount funded with regards to applicants.
+
+---
+
