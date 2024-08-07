@@ -2,9 +2,19 @@
 
 ## Table of Contents
 
+[Data Source](#data-source)
+
 [Tools Used](#tools-used)
 
 [Exploratory Data Analysis](#exploratory-data-analysis)
+
+[Data Analysis](#data-analysis)
+
+[Recommendations](#recommendations)
+
+[Limitations](#limitations)
+
+
 
 ---
 ## Project Overview
