@@ -5,13 +5,21 @@ A Report to monitor and assess our bank's lending activities and performance whi
 
 ### Data Source
 
-[ Data_Link ](https://drive.google.com/drive/folders/1nVYJrAVvUegJjX9vChxWCW61TzBQ49td)
-
-Financial Loan: The primary dataset used for this analysis is the "financial_loan.csv" file, containing detailed information about each loan made by the bank.
+Financial Loan: The primary dataset used for this analysis is the "financial_loan.csv" file, containing detailed information about each loan made by the bank. [ DataSet ](https://drive.google.com/drive/folders/1nVYJrAVvUegJjX9vChxWCW61TzBQ49td)
 
 ### Tools Used
 - **Microsoft SQL Server**
 - **Tableau Desktop** - For Creating Report
+    - Links to the Financial_Loan Project and other Tableau_Public Dashboards:
+
+        [SUMMARY_DashBoard](https://public.tableau.com/app/profile/chidera.clinton/viz/SUMMARYDshbrd1/SUMMARY)
+      
+        [Overview_DashBoard](https://public.tableau.com/app/profile/chidera.clinton/viz/Loan_OVERVIEW/OVERVIEW)
+      
+        [Details_DashBoard](https://public.tableau.com/app/profile/chidera.clinton/viz/Loan_DETAILS/DETAILS)
+      
+        [OTHER_DashBoards](https://public.tableau.com/app/profile/chidera.clinton/vizzes)
+          
 
 ### Data Cleaning/Preparation
   In the initial data preparation phase, I performed the following tasks:
@@ -421,7 +429,9 @@ Key Findings:
 - **High Application Rate for New Employees:** The category of employees with less than one year of employment has the second-highest number of loan applications, suggesting a potential correlation between new hires and financial needs.
  
 - **Decreasing Trend**: As employee tenure increases, the number of loan applications generally decreases, with a steeper decline in the earlier years of employment.
-Dominant Group: Employees with over 10 years of tenure constitute the largest group of loan applicants.
+
+- **Dominant Group**: Employees with over 10 years of tenure constitute the largest group of loan applicants.
+
 
 
 **ii. Total Funded Amount**
