@@ -1,4 +1,11 @@
 # Bank_Loan_Report
+
+## Table of Contents
+
+[Tools Used](#tools-used)
+
+[Exploratory Data Analysis](#exploratory-data-analysis)
+
 ---
 ## Project Overview
 A Report to monitor and assess our bank's lending activities and performance which aims to provide insights into key loan-related metrics and their changes over time.
@@ -12,15 +19,9 @@ Financial Loan: The primary dataset used for this analysis is the "financial_loa
 - **Tableau Desktop** - For Creating Report
     - Links to the Financial_Loan Project and other Tableau_Public Dashboards:
 
-        [SUMMARY_DashBoard](https://public.tableau.com/app/profile/chidera.clinton/viz/SUMMARYDshbrd1/SUMMARY)
+        [SUMMARY_DashBoard](https://public.tableau.com/app/profile/chidera.clinton/viz/SUMMARYDshbrd1/SUMMARY) |  [Overview_DashBoard](https://public.tableau.com/app/profile/chidera.clinton/viz/Loan_OVERVIEW/OVERVIEW)  |  [Details_DashBoard](https://public.tableau.com/app/profile/chidera.clinton/viz/Loan_DETAILS/DETAILS)  |  [OTHER_DashBoards](https://public.tableau.com/app/profile/chidera.clinton/vizzes)
       
-        [Overview_DashBoard](https://public.tableau.com/app/profile/chidera.clinton/viz/Loan_OVERVIEW/OVERVIEW)
-      
-        [Details_DashBoard](https://public.tableau.com/app/profile/chidera.clinton/viz/Loan_DETAILS/DETAILS)
-      
-        [OTHER_DashBoards](https://public.tableau.com/app/profile/chidera.clinton/vizzes)
           
-
 ### Data Cleaning/Preparation
   In the initial data preparation phase, I performed the following tasks:
  - Data Loading and Inspection with the **MS SQLServer**
@@ -363,8 +364,6 @@ Without additional context, it's challenging to pinpoint the exact reasons behin
 
    - _Economic Conditions_: Fluctuations in economic indicators like GDP growth, interest rates, or employment rates could influence borrowing decisions.
 
-   - _Marketing and Promotions_: Targeted marketing campaigns or special loan offers during specific months might drive application numbers.
-
    ---
 
 b) i. Loan Applications By States
@@ -479,8 +478,9 @@ Key Observations:
 
   - **Debt Consolidation Dominates**: Debt consolidation is the most common loan purpose, accounting for $18.21K in applications. This suggests that many people are seeking loans to manage existing debts.
 
-  - **Credit Card Debt**: Credit card debt is the second most popular reason for seeking loans, with $5.00K in applications. This aligns with the high prevalence of credit card usage and potential difficulties 
-      in managing repayments.
+  - **Credit Card Debt**: Credit card debt is the second most popular reason for seeking loans, with $5.00K in applications. This aligns with the high prevalence of credit 
+      card usage and potential difficulties in managing repayments.
+  
   - **Home Improvement and Other Purposes**: Home improvement and "other" purposes each account for a significant portion of loan applications, with $2.88K and $2.88K, respectively. This indicates a range of 
      needs beyond debt consolidation and credit card debt.
 
@@ -542,6 +542,7 @@ Key Findings:
 
 
 
+
 **ii. Funded Amount By Home Ownership**
 
 ![Tot_Fnd_Amt_by_Home_Owned](https://github.com/user-attachments/assets/0e1ab471-2907-4448-b9cc-ccc5197c33ff)
@@ -553,17 +554,37 @@ Key Findings:
 **Homeowners Without Mortgages (Own)**: This category represents a significantly smaller portion of loan funded by the bank, with the sum of $29,597,675.
 
 
+
 **iii. Amount Received By Home Ownership**
 
 ![Tot_Amt_Rcvd_by_Home_Owned](https://github.com/user-attachments/assets/b2b0c783-d2fa-4242-bc97-32bf73b15700)
 
-**Mortgage** again has the highest sum returned by individuals totally with the sum of $238,474,438
+- **Mortgage** again has the highest sum returned by individuals totally with the sum of $238,474,438
 
-**Renters** follow with the huge sum of $201,823,056
+- **Renters** follow with the huge sum of $201,823,056
 
-**Own** comes up last as usual with the sum of $31,729,129
+- **Own** comes up last as usual with the sum of $31,729,129
 
 Generally, it's seen that areas where more loan were put into or funded still had the highest number of return due to different circumstances like number of applicants. Therefore, their profit margin varies in accordance to amount funded with regards to applicants.
 
 ---
 
+### Recommendations
+
+Based on the analysis, with respect to the metrics used, also with the Monthly Trends, the following actions are recommended:
+  - The bank should focus on knowing the circumstances surrounding February period to know if to continue giving out loan to applicants since there was a dip in applications which would as well affect the return rate (Amount Received), and January being the first month of the year with relatively low applications . 
+  
+  - Hot periods to give out loans due to applications/demand is from the month of July through 
+    December.
+  
+  - Employees with length of over 10yrs had higher returns compared to others with lower year length. This might be due to experiences, loyalty, or salary earned. Loans should be given more to this group if those conditions might be the case. Else, those with 2yrs length looks promising to give loan to since their return rate is higher than those having 3yrs and 4yrs of length.
+  
+  - Renters had the highest application rate, but their return rate (Amount Received) came second to those with Mortgage which initially came second in overall applications. Therefore, Loans should be given to both but more to those with Mortgage.
+  
+  -  Marketing and Promotions: Targeted marketing campaigns or special loan offers during specific months might drive application numbers.
+
+### Limitations
+
+- Since the Economic conditions weren't stated during the loaning periods, it made it somewhat difficult to know why some applicants did poorly in their return rate
+ 
+- Also, there was no column stating "death_rates" to enhance or help our analysis have better understanding of the situation.
